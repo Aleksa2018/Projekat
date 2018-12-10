@@ -3,7 +3,7 @@ class LinkedQueue:
     class _Node:
         __slots = '_element', '_next'
 
-        def init(self, element, next):
+        def __init__(self, element, next):
             self._element = element
             self._next = next
 
