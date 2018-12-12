@@ -1,6 +1,7 @@
 from task2 import LinkedQueue
 
 def quick_sort(S):
+
     n=len(S)
     if n<2:
         return
@@ -24,6 +25,3 @@ def quick_sort(S):
         S.enqueue(E.dequeue())
     while not G.is_empty():
         S.enqueue(G.dequeue())
-
-
-

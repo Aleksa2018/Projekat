@@ -41,3 +41,13 @@ class LinkedQueue:
             self._tail._next = newest
         self._tail = newest
         self._size += 1
+
+    def print_queue(self):
+        current = self._head
+        self.temp = []
+        while current:
+            self.temp.append(current._element)
+            current = current._next
+        return self.temp
+
+
