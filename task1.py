@@ -42,9 +42,9 @@ n.enqueue(2)
 
 
 print("Queue: ", n.print_queue())
-start1 = time.process_time()
+start1 = time.clock()
 merge_sort(n)
-stop1 = time.process_time()
+stop1 = time.clock()
 print("Sorted queue: ", n.print_queue())
 
 print("")
@@ -57,9 +57,9 @@ m.enqueue(1)
 m.enqueue(2)
 
 print("Queue: ", m.print_queue())
-start2 = time.process_time()
+start2 = time.clock()
 quick_sort(m)
-stop2 = time.process_time()
+stop2 = time.clock()
 print("Sorted queue: ", m.print_queue())
 
 
