@@ -41,20 +41,20 @@ p =  LinkedQueue()
 
 for i in range(1000):
     n.enqueue(random.randint(0,10000))
-    m.enqueue(random.randint(0, 10000))
-    p.enqueue(random.randint(0, 10000))
+    m.enqueue(random.randint(0,10000))
+    p.enqueue(random.randint(0,10000))
 
 
 for i in range(1000):
     n.enqueue(random.randint(0,100000))
-    m.enqueue(random.randint(0, 100000))
-    p.enqueue(random.randint(0, 100000))
+    m.enqueue(random.randint(0,100000))
+    p.enqueue(random.randint(0,100000))
 
 
 for i in range(1000):
     n.enqueue(random.randint(0,1000000))
-    m.enqueue(random.randint(0, 1000000))
-    p.enqueue(random.randint(0, 1000000))
+    m.enqueue(random.randint(0,1000000))
+    p.enqueue(random.randint(0,1000000))
 
 
 print("Queue: ", n.print_queue())
