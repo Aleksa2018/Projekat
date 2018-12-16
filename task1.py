@@ -34,26 +34,20 @@ def merge_sort(S):
     merge(S1, S2, S)
 
 
-
 n = LinkedQueue()
 m = LinkedQueue()
-p =  LinkedQueue()
-
-for i in range(1000):
-    n.enqueue(random.randint(0,10000))
-    m.enqueue(random.randint(0,10000))
-    p.enqueue(random.randint(0,10000))
+p = LinkedQueue()
 
 
-for i in range(1000):
-    n.enqueue(random.randint(0,100000))
-    m.enqueue(random.randint(0,100000))
-    p.enqueue(random.randint(0,100000))
-
-
-for i in range(1000):
+for i in range(10000):
     n.enqueue(random.randint(0,1000000))
+
+
+for i in range(100000):
     m.enqueue(random.randint(0,1000000))
+
+
+for i in range(1000000):
     p.enqueue(random.randint(0,1000000))
 
 
@@ -68,6 +62,8 @@ t1=stop1-start1
 
 
 print("")
+
+
 print("Queue: ", m.print_queue())
 start1 = time.clock()
 merge_sort(m)
@@ -77,7 +73,9 @@ print(stop1-start1)
 
 t2=stop1-start1
 
-print('')
+
+print("")
+
 
 print("Queue: ", p.print_queue())
 start1 = time.clock()
@@ -88,30 +86,25 @@ print(stop1-start1)
 
 t3=stop1-start1
 
-print("")
 
+print("")
 
 
 n1 = LinkedQueue()
 m1 = LinkedQueue()
-p1 =  LinkedQueue()
-
-for i in range(1000):
-    n1.enqueue(random.randint(0,10000))
-    m1.enqueue(random.randint(0, 10000))
-    p1.enqueue(random.randint(0, 10000))
+p1 = LinkedQueue()
 
 
-for i in range(1000):
-    n1.enqueue(random.randint(0,100000))
-    m1.enqueue(random.randint(0, 100000))
-    p1.enqueue(random.randint(0, 100000))
-
-
-for i in range(1000):
+for i in range(10000):
     n1.enqueue(random.randint(0,1000000))
-    m1.enqueue(random.randint(0, 1000000))
-    p1.enqueue(random.randint(0, 1000000))
+
+
+for i in range(100000):
+    m1.enqueue(random.randint(0,1000000))
+
+
+for i in range(1000000):
+    p1.enqueue(random.randint(0,1000000))
 
 
 print("Queue: ", n1.print_queue())
@@ -124,8 +117,9 @@ print(stop1-start1)
 t11=stop1-start1
 
 
-
 print("")
+
+
 print("Queue: ", m1.print_queue())
 start1 = time.clock()
 quick_sort(m1)
@@ -136,7 +130,8 @@ print(stop1-start1)
 t22=stop1-start1
 
 
-print('')
+print("")
+
 
 print("Queue: ", p1.print_queue())
 start1 = time.clock()
@@ -147,9 +142,6 @@ print(stop1-start1)
 
 t33=stop1-start1
 
-print(" ")
+print("")
 
 print(t1-t11,t2-t22,t3-t33)
-
-
-
