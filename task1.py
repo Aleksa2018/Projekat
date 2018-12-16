@@ -40,7 +40,7 @@ p = LinkedQueue()
 
 
 for i in range(10000):
-    n.enqueue(random.randint(0, 1000000))
+    n.enqueue(random.randint(0,1000000))
 
 
 for i in range(100000):

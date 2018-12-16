@@ -1,5 +1,6 @@
 class LinkedQueue:
 
+
     class _Node:
         __slots = '_element', '_next'
 

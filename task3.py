@@ -1,5 +1,6 @@
 from task2 import LinkedQueue
 
+
 def quick_sort(S):
 
     n=len(S)
